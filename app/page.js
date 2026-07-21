@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function BrowserOverlay({ children }) {
 
 
-  const apkDownloadLink = "/apk/app.apk";
+  const apkDownloadLink = "/apk/fightzone.apk";
 
   return (
     <div className="fixed inset-0 z-50 bg-[#0A051E] to-[#1B103A] flex flex-col">
@@ -50,7 +50,13 @@ export default function BrowserOverlay({ children }) {
           >
             📱 Download Fight Zone
           </a>
-
+          <a
+            href="https://fightzone.online/apk/fightzone.apk"
+            download
+            className="px-8 py-3 border border-indigo-500 to-purple-600 text-white font-semibold rounded-full shadow-lg transform transition hover:scale-105"
+          >
+            📱 Download From Browser
+          </a>
         </div>
 
         {/* Stats Section */}
